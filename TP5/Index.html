@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulmaire d'inscription</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <h1>Veillez à bien remplir les champs obligatoires (<span>*</span>)</h1>
+    <div class="container">
+        <form action="" method="post" class="registration">
+            <fieldset>
+                <legend>Informations personnelles </legend>
+                <div>
+                    <ul>
+                        <li>
+                            <label>Civilité<span>*</span> :</label> <br>
+                            <input type="radio" id="civilite" name="civilité" checked /> Monsieur
+                            <input type="radio" id="civilite" name="civilité" /> Madame
+                            <input type="radio" id="civilite" name="civilité"/> Autre
+                        </li>
+                        <li>
+                            <label for="nom">Nom<span>*</span> :</label>
+                            <input type="text" id="nom" name="nom" placeholder="DUPONT" class="input" required>
+                        </li>
+                        <li>
+                            <label for="prenom">Prenom<span>*</span> :</label>
+                            <input type="text" id="prenom" name="prenom" placeholder="Michel" class="input" required>
+                        </li>
+                        <li>
+                            <label for="birthdate">Date de naissance<span>*</span></label>
+                            <input type="date" id="birthdate" name="birthdate" class="input" required>
+                        </li>
+                        <li>
+                            <label for="phone">Numéro de téléphone<span>*</span> :</label>
+                            <input type="tel" id="phone" name="phone" placeholder="01 23 45 67 89" class="input" required>
+                        </li>
+                        <li>
+                            <label for="prenom">Email<span>*</span> :</label><br>
+                            <input type="email" id="Email" name="Email" placeholder="abc@defghij.kl" class="input" required>
+                        </li>
+                        <li>
+                            <label for="password">Mot de passe<span>*</span></label>
+                            <input type="password" id="password" name="password" placeholder="***************" class="input" required>
+                        </li>
+                        <li>
+                            <label for="password">Confirmation du mot de passe<span>*</span></label>
+                            <input type="password" id="confirmMdp" name="password" placeholder="***************" class="input" required>
+                        </li>
+                        <li>
+                            <label>Département<span>*</span></label>
+                            <select name="departement" required>
+                                <option selected disabled value="base">Selectionner Département</option>
+                                <option value="Maine-et-Loire">Maine-et-Loire</option>
+                                <option value="Loire Atlantique">Loire Atlantique</option>
+                                <option value="Mayenne">Mayenne</option>
+                                <option value="Sarthe">Sarthe</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <input type="checkbox" checked> Recevoir la newsletter
+                <br>
+                <input class="btn" type="submit" value="Envoyer">
+            </fieldset>
+        </form>
+    </div>
+</body>
+<footer>
+    <p>&copy;Arinfo 2024</p>
+</footer>
+</html>

@@ -1,0 +1,56 @@
+label span {
+    color: red;
+}
+
+body {
+    font-family: roboto, arial, helvetica neue, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #397367;
+}
+
+.btn {
+    background: #57b846;
+    border-radius: 13px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.input {
+    padding: 9px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+div {
+    display: flex;
+    margin: auto;
+}
+
+.registration {
+    text-align: center; /* Centrer le titre */
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #63CCCA;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Largeur du formulaire */
+    line-height: 2em;
+}
+footer{
+    background-color: #5DA399;
+    color: rgba(255, 255, 255, 0.858);
+    padding: 21px;
+    font-size: x-small;
+}
+
+@media (max-width:768px) {
+    form li {
+        
+    }
+}
