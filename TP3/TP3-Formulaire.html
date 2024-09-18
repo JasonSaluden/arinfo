@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire inscription bénévoles</title>
+</head>
+
+<body>
+    <section>
+
+        <h1>Enregistrez-vous</h1>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Formulaire de test</legend>
+                <ul>
+                    <li>Civilité
+                        <label>Monsieur</label>
+                        <input type="radio" id="monsieur" name="genre" checked>
+                        <label>Madame</label>
+                        <input type="radio" id="madame" name="genre">
+                        <label>Autre</label>
+                        <input type="radio" id="autre" name="genre">
+                    </li>
+                    <li>Nom, prenom, téléphone et mail
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom">
+                    </li>
+                    <li>
+                        <label for="prenom">Prenom :</label>
+                        <input type="text" id="prenom" name="prenom">
+                    </li>
+                    <li>
+                        <label for="phone">Numéro de téléphone :</label>
+                        <input type="tel" id="phone" name="phone" placeholder="ex : 01 23 45 67 89">
+                    </li>
+                    <li>
+                        <label for="prenom">Email :</label>
+                        <input type="email" id="Email" name="Email">
+                    </li>
+                    <li>Département
+                        <select name="departement">
+                            <option selected disabled value="base">Selectionner Département</option>
+                            <option value="Maine-et-Loire">Maine-et-Loire</option>
+                            <option value="Loire Atlantique">Loire Atlantique</option>
+                            <option value="Mayenne">Mayenne</option>
+                            <option value="Sarthe">Sarthe</option>
+                        </select>
+                    </li>
+                    <li>Infos supplémentaires
+                    <textarea name="zone de texte" rows="6" cols="56" placeholder="Ecrire ici"></textarea>
+                    </li>
+                </ul>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Effacer">
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>
